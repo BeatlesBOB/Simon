@@ -6,14 +6,14 @@ const grammar = '#JSGF V1.0; grammar colors; public <color> = bleu | jaune | ver
 export default function App() {
   
   useEffect(()=>{
-    const recognition = new SpeechRecognition();
-    const speechRecognitionList = new SpeechGrammarList();
-    speechRecognitionList.addFromString(grammar, 1);
-    recognition.grammars = speechRecognitionList;
-    recognition.continuous = false;
-    recognition.lang = 'en-US';
-    recognition.interimResults = false;
-    recognition.maxAlternatives = 1;
+    // const recognition = new SpeechRecognition();
+    // const speechRecognitionList = new SpeechGrammarList();
+    // speechRecognitionList.addFromString(grammar, 1);
+    // recognition.grammars = speechRecognitionList;
+    // recognition.continuous = false;
+    // recognition.lang = 'en-US';
+    // recognition.interimResults = false;
+    // recognition.maxAlternatives = 1;
   },[])
 
   return (
