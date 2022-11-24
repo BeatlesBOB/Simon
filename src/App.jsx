@@ -46,7 +46,7 @@ export default function App() {
   useEffect(()=>{
     let timer
     if(!isUserPlaying){
-       timer = setTimeout(()=>setCurrentIndex(currentIndex+1),3000)
+      timer = setTimeout(()=>setCurrentIndex(currentIndex+1),3000)
     }
     return () => {
       if(timer){
