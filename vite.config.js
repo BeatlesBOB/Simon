@@ -9,6 +9,28 @@ export default defineConfig({
     VitePWA(
       { 
         registerType: 'autoUpdate',
+        devOptions: {
+          enabled: true
+        },
+        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+        manifest: {
+          name: 'Simon',
+          short_name: 'sim',
+          description: 'Memo les couleurs',
+          theme_color: '#ffffff',
+          icons: [
+            {
+              src: 'pwa-192x192.png',
+              sizes: '192x192',
+              type: 'image/png'
+            },
+            {
+              src: 'pwa-512x512.png',
+              sizes: '512x512',
+              type: 'image/png'
+            }
+          ]
+        }
       }
     )
   ]
