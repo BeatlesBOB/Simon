@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.app{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3F3F37;
+}
+
+.container{
+    max-width: 50rem;
+    width: 100%;
+}
+
+.simon{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    &__title{
+        font-size: 10rem;
+        color: white;
+        text-align: center;
+        font-family: 'Lobster', cursive;
+    }
+
+    &__box{
+        border-radius: 15px;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,30rem);
+    }
+
+    &__btn{
+        padding: 2rem;
+        font-size: 2rem;
+        font-family: 'Lobster', cursive;
+        border-radius: 1rem;
+        border: none;
+        
+    }
+}
